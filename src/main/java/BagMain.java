@@ -24,7 +24,6 @@ class BagMain {
     }
 
     /**
-     * TODO: Implement this method
      * Return the total number of straps in CrossbodyBags in bags.
      * Any bag that is not a CrossbodyBag should not be included
      * in the count!
@@ -33,13 +32,14 @@ class BagMain {
      * @return The total number of straps of CrossbodyBags.
      */
     public static int countCrossbodyStraps(Bag[] bags) {
-        int count = 0;
+        int[] number = new int[1];
+        number[0] = 0;
 
-        for (Bag bag : bags) {
-            if (bag instanceof CrossbodyBag) {
-                count += 1;
+        for (Bag b : bags) {
+            if (b instanceof CrossbodyBag) {
+                number[0] += 1;
             }
         }
-        return count;
+        return number[0];
     }
 }
