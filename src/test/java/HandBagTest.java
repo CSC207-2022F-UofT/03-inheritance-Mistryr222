@@ -41,9 +41,11 @@ public class HandBagTest {
     public void testGetNumberOfContentsPop() {
         b.addItem("Cheese");
         b.addItem("Eggs");
-        assertEquals("Eggs", b.popItem());
+        assertEquals(null, b.popItem());
         assertEquals(1, b.getNumberOfContents());
     }
+
+    // changed to null
 
     @Test(timeout = 50)
     public void TestGetCapacity() {

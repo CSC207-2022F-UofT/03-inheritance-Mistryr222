@@ -52,8 +52,7 @@ public abstract class Bag {
      */
      public String popItem() {
          if (this.capacity > 0) {
-             String item = String.valueOf(contents[numberOfContents]);
-             contents[numberOfContents] = null;
+             String item = contents[numberOfContents];
              numberOfContents -= 1;
              return item;
          } else {
