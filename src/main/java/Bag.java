@@ -73,7 +73,7 @@ public abstract class Bag {
 
         for (String s : this.contents) {
             new_contents[k] = s;
-            k += 1;
+            k++;
         }
 
         this.contents = new_contents;
