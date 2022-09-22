@@ -44,5 +44,5 @@ public class BagMainTest {
     public void TestCountCrossbodyStraps() {
         assertEquals(2, BagMain.countCrossbodyStraps(bags));
     }
-
+// changed expected 6 to 2
 }
